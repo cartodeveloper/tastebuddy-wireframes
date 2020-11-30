@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  margin: 0;
+  color: white;
+}
+
+body {
+  margin-top: 0;
+  background-color: black;
+}
+nav {
+  background-color: rgb(68, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  padding: 30px;
+  text-decoration: none;
+}
+a:hover {
+  color: #db6666;
+}
+nav h1 {
+  flex: 2;
+  margin-left: 30px;
+  text-shadow: -1px 0 #723333, 0 3px#723333, 2px 0#723333, 0 -1px#723333;
+}
+main {
+  text-align: center;
+}
+h2 {
+  margin-top: 10%;
+}
+section {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.image-text {
+  position: absolute;
+  font-size: small;
+  opacity: 0.5;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+img {
+  width: 300px;
+}
+form {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px 3px gray inset;
+}
+form div {
+  padding: 10px;
+}
+.no-flex {
+  display: block;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+option,
+textarea {
+  border-radius: 20px;
+  color: black;
+  width: 300px;
+  padding: 1%;
+  text-align: center;
+}
+textarea {
+  width: 90%;
+  text-align: left;
+}
+
+.white-wines,
+.red-wines {
+  width: 200px;
+}
+.red-wines {
+  color: white;
+}
+
+legend,
+button {
+  background-color: rgb(68, 0, 0);
+  width: 150px;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 20px;
+  text-shadow: -1px 0 #723333, 0 2px#723333, 2px 0#723333, 0 -1px#723333;
+}
+
+.item p,
+.red-f,
+fieldset {
+  padding: 10px;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.gray {
+  background-color: gray;
+  color: black;
+}
+.red-f,
+.red-wines {
+  background-color: rgb(68, 0, 0);
+}
+button {
+  width: 100%;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+button:hover {
+  color: black;
+  background-color: gray;
+}
+
+footer p {
+  padding: 10px;
+  font-size: small;
+  text-align: center;
+}
+
+@media all and (min-width: 1000px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}

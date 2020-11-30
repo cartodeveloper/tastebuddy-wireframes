@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  margin: 0;
+}
+body {
+  margin-top: 0;
+}
+nav {
+  background-color: rgb(68, 0, 0);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  padding: 30px;
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #db6666;
+}
+nav h1 {
+  flex: 2;
+  margin-left: 30px;
+  text-shadow: -1px 0 #723333, 0 3px#723333, 2px 0#723333, 0 -1px#723333;
+}
+
+main {
+  text-align: center;
+}
+header {
+  padding: 10%;
+  justify-content: space-around;
+}
+
+header h2 {
+  color: rgb(68, 0, 0);
+  margin-bottom: 10px;
+  text-shadow: -1px 0 #dddddd, 0 2px #dddddd, 1px 0 #dddddd, 0 -1px #dddddd;
+}
+
+p {
+  padding: 5px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+section {
+  min-height: 200px;
+  padding: 30px 15px;
+  background-color: white;
+}
+section:nth-child(even) {
+  background-color: rgb(68, 0, 0);
+  color: white;
+}
+
+h3 {
+  padding: 30px 15px;
+}
+
+img {
+  width: 300px;
+  padding: 10px;
+}
+footer p {
+  padding: 10px;
+  font-size: small;
+  text-align: center;
+  background-color: rgb(68, 0, 0);
+  color: white;
+}
+
+form {
+  display: inline-block;
+  padding: 25px;
+  background-color: black;
+  color: white;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px 3px gray inset;
+}
+input,
+fieldset {
+  border-radius: 10px;
+}

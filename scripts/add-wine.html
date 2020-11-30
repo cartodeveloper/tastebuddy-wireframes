@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/styles/add-wine.css" />
+    <title>TasteBuds</title>
+  </head>
+  <body>
+    <nav role="nav">
+      <h1>TasteBuds</h1>
+      <a href="../index.html">Wireframes</a>
+      <a href="/scripts/dashboard.html">Dashboard</a>
+      <a href="/scripts/wines.html">Wines</a>
+      <a href="/scripts/add-wine.html">+ New Wine</a>
+      <a href="/scripts/tastebud-guide.html">TasteBud Guide</a>
+    </nav>
+    <main role="main">
+      <h2>Deductive Tasting Format</h2>
+      <section>
+        <form>
+          <img src="../assets/picture.png" alt='image-url'/>
+          <p class="image-text">Add (URL)Wine Image</p>
+          <div>
+            <label>Name:</label>
+            <input placeholder="eg.Yacochuya" type="text" id="wine-name" />
+          </div>
+          <div>
+            <label>Producer:</label>
+            <input placeholder="The Etcharts" type="text" id="producer" />
+          </div>
+          <div>
+            <label>Varietal:</label>
+            <input placeholder="Malbec" type="text" id="varietal" />
+          </div>
+          <div>
+            <label>Vintage:</label>
+            <input placeholder="2007" type="number" id="vintage" />
+          </div>
+          <div>
+            <label>Country:</label>
+            <input placeholder="Argentina" type="text" id="country" />
+          </div>
+          <div>
+            <label>Region:</label>
+            <input placeholder="Salta’s Cafayate valley" type="text" id="region" />
+          </div>
+          <fieldset>
+            <legend>Sigth</legend>
+            <div>
+              <label for="clarity">Clarity/Sediments:</label>
+              <select>
+                <option value="1">Clear</option>
+                <option value="2">Hazy</option>
+                <option value="3">Turbid</option>
+              </select>
+            </div>
+            <div>
+              <label for="Concentration">Concentration:</label>
+              <select>
+                <option value="1">Pale</option>
+                <option value="2">Medium</option>
+                <option value="3">Deep</option>
+              </select>
+            </div>
+            <div>
+              <p class='red-f'>Color</p>
+              <label for="Color">White:</label>
+              <select class="white-wines">
+                <option value=""></option>
+                <option value="0">Water White</option>
+                <option value="1">Straw</option>
+                <option value="2">Yellow</option>
+                <option value="3">Gold</option>
+              </select>
+              <label for="red-wines">Red:</label>
+              <select class="red-wines">
+                <option value=""></option>
+                <option value="2">Purple</option>
+                <option value="3">Ruby</option>
+                <option value="3">Red</option>
+                <option value="3">Garnet</option>
+              </select>
+            </div>
+            <div class="no-flex">
+              <p class="red-f">Rim Variation</p>
+                <input type="radio" id="yes-rim" name="bool" value="yes-rim" />
+                <label for="Yes">Yes</label>
+                <input type="radio" id="no-rim" name="bool" value="no-rim" />
+                <label for="No">No</label>
+              
+            </div>
+            <div>
+              <label for="staning">Extract/Staning:</label>
+              <select>
+                <option value="1">None</option>
+                <option value="2">Ligth</option>
+                <option value="3">Medium</option>
+                <option value="3">Heavy</option>
+              </select>
+            </div>
+            <div>
+              <label for="tearing">Tearing:</label>
+              <select>
+                <option value="1">Ligth</option>
+                <option value="2">Medium</option>
+                <option value="3">Heavy</option>
+              </select>
+            </div>
+            <div class='no-flex'>
+              <p class='red-f'>Gas evidence</p>
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="yes-gas"
+                  name="bool-g"
+                  value="yes-gas"
+                />
+                <label for="Yes">Yes</label>
+                <input type="radio" id="no-gas" name="bool-g" value="no-gas" />
+                <label for="No">No</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Nose</legend>
+            <div>
+              <label for="clean">Clean/Faulty:</label>
+              <select>
+                <option value="0">TCA</option>
+                <option value="1">H2S</option>
+                <option value="2">Volatile Acidity</option>
+                <option value="3">Ethyl Acetate</option>
+                <option value="4">Brettanomyces</option>
+                <option value="5">Oxidation</option>
+                <option value="6">None</option>
+              </select>
+            </div>
+            <div>
+              <label for="intensity">Intensity:</label>
+              <select>
+                <option value="1">Delicate</option>
+                <option value="2">Moderate</option>
+                <option value="3">Powerfull</option>
+              </select>
+            </div>
+            <div>
+              <label for="age">Age Assessment:</label>
+              <select>
+                <option value="0">Youthful</option>
+                <option value="1">Developing</option>
+                <option value="2">Vinous</option>
+              </select>
+            </div>
+            <div>
+              <p class="red-f">Fruit Notes</p>
+              <div class="item">
+                <p class="gray">White Wines</p>
+                <label
+                  >Citrus
+                  <input type="checkbox"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label
+                  >Apple/Pear
+                  <input type="checkbox"  />
+                  <span class="checkmark"></span>
+                </label>
+                <label
+                  >Tropical/Melon
+                  <input type="checkbox"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="item">
+                <p class='gray'>Red Wines</p>
+                
+                <label
+                  >Red
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label
+                  >Black
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label
+                  >Blue
+                  <input type="checkbox"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="item">
+                  <p class="red-f">Non-fruit</p>
+                  <label>
+                    Floral
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Vegetable
+                    <input type="checkbox"  />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Herbal
+                    <input type="checkbox"  />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Spice
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Animal
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="item">
+                  <p class="red-f">Earth</p>
+                  <label
+                    >Florest Floor
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Compost
+                    <input type="checkbox"  />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Mushrooms
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Potting Soil
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="item">
+                  <p class="red-f">Mineral</p>
+                  <label
+                    >Mineral
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Wet Stone
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Limestone  
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Chalk
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Flint
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div>
+              <p class="red-f">Wood</p>
+              <div class="item">
+                <p class='gray'>Age</p>
+                <label
+                  >Old
+                  <input type="radio" id='wood' name='age' value='old'/>
+                </label>
+                <label
+                  >New
+                  <input type="radio" id='wood' name='age' value='new'/>
+                </label>
+                
+              </div>
+              <div class="item">
+                <p class='gray'>Size</p>
+                <label
+                  >Small
+                  <input type="radio" id='wood' name='size' value='small'/>
+                </label>
+                <label
+                  >Large
+                  <input type="radio" id='wood' name='size' value='large'/>
+                </label>
+              </div>
+              <div class="item">
+                <p class='gray'>Origin</p>
+                <label
+                  >American 
+                  <input type="radio" id='wood' name='origin' value='american'/>
+                </label>
+                <label
+                  >French
+                  <input type="radio" id='wood' name='origin' value='french'/>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+           <fieldset>
+            <legend>Palate</legend>
+            <div>
+              <label for="sweetness">Sweetness:</label>
+              <select>
+                <option value="0">Bone-Dry</option>
+                <option value="1">Dry</option>
+                <option value="2">Off-Dry</option>
+                <option value="3">Medium Sweet</option>
+                <option value="4">Sweet</option>
+                <option value="5">Luciously Sweet</option>
+              </select>
+            </div>
+            <div>
+              <p class="red-f">Fruit Flavours</p>
+              <div class="item">
+                <p class="gray">White Wines</p>
+                <label
+                  >Citrus
+                  <input type="checkbox"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label
+                  >Apple/Pear
+                  <input type="checkbox"  />
+                  <span class="checkmark"></span>
+                </label>
+                <label
+                  >Tropical/Melon
+                  <input type="checkbox"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="item">
+                <p class='gray'>Red Wines</p>
+                
+                <label
+                  >Red
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label
+                  >Black
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label
+                  >Blue
+                  <input type="checkbox"/>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="item">
+                  <p class="red-f">Non-fruit</p>
+                  <label></label>
+                    Floral
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Vegetable
+                    <input type="checkbox"  />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Herbal
+                    <input type="checkbox"  />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Spice
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Animal
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="item">
+                  <p class="red-f">Earth</p>
+                  <label
+                    >Florest Floor
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Compost
+                    <input type="checkbox"  />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Mushrooms
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Potting Soil
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="item">
+                  <p class="red-f">Mineral</p>
+                  <label
+                    >Mineral
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Wet Stone
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Limestone  
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Chalk
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label
+                    >Flint
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div>
+              <p class="red-f">Wood</p>
+              <div class="item">
+                <p class='gray'>Age</p>
+                <label
+                  >Old
+                  <input type="radio" id='wood' name='age' value='old'/>
+                </label>
+                <label
+                  >New
+                  <input type="radio" id='wood' name='age' value='new'/>
+                </label>
+              </div>
+              <div class="item">
+                <p class='gray'>Size</p>
+                <label
+                  >Small
+                  <input type="radio" id='wood' name='size' value='small'/>
+                </label>
+                <label
+                  >Large
+                  <input type="radio" id='wood' name='size' value='large'/>
+                </label>
+              </div>
+              <div class="item">
+                <p class='gray'>Origin</p>
+                <label
+                  >American 
+                  <input type="radio" id='wood' name='origin' value='american'/>
+                </label>
+                <label
+                  >French
+                  <input type="radio" id='wood' name='origin' value='french'/>
+                </label>
+              </div>
+              <div>
+              <label for="tannins">Tannins:</label>
+              <select>
+                <option value="0">Low</option>
+                <option value="1">Med-</option>
+                <option value="2">Medium</option>
+                <option value="3">Med+</option>
+                <option value="4">High</option>
+              </select>
+            </div>
+            <div>
+              <label for="acidity">Acidity:</label>
+              <select>
+                <option value="0">Low</option>
+                <option value="1">Med-</option>
+                <option value="2">Medium</option>
+                <option value="3">Med+</option>
+                <option value="4">High</option>
+              </select>
+            </div>
+            <div>
+              <label for="alcohol">Alcohol:</label>
+              <select>
+                <option value="0">Low</option>
+                <option value="1">Med-</option>
+                <option value="2">Medium</option>
+                <option value="3">Med+</option>
+                <option value="4">High</option>
+              </select>
+            </div>
+             <div>
+              <label for="complexity">Complexity:</label>
+              <select>
+                <option value="0">Low</option>
+                <option value="1">Med-</option>
+                <option value="2">Medium</option>
+                <option value="3">Med+</option>
+                <option value="4">High</option>
+              </select>
+            </div>
+             <div>
+              <label for="length">Length:</label>
+              <select>
+                <option value="0">Short</option>
+                <option value="1">Med-</option>
+                <option value="2">Medium</option>
+                <option value="3">Med+</option>
+                <option value="4">Long</option>
+              </select>
+            </div>
+            <div>
+              <label for="body">Body:</label>
+              <select>
+                <option value="0">Ligth</option>
+                <option value="1">Medium</option>
+                <option value="3">Full</option>
+              </select>
+            </div>
+            <div>
+              <label for="texture">Texture:</label>
+              <select>
+                <option value="0">Creamy</option>
+                <option value="1">Round</option>
+                <option value="2">Lean</option>
+              </select>
+            </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Conclusion</legend>
+            <p class='red-f'>Comments</p>
+        <textarea id='comments' name='wine-review' rows='5' cols='70' placeholder="Spectacular wine from Salta. Deep red. Complex, red and ripe fruits...">
+            </textarea>
+            <p class='red-f'> Score </p>
+            <input type="number" min="1" max="100" placeholder="from 1 to 100 points">
+          </fieldset>
+          <button class='red-f'type='submit'>Add Wine</button>
+        </form>
+        <div id="group"></div>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <p>Copyright © MTD systems</p>
+  </footer>
+</html>
