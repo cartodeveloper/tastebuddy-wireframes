@@ -53,7 +53,6 @@ option {
   padding: 1%;
   border-radius: 20px;
   color: black;
-  width: 300px;
   font-size: 15px;
 }
 
@@ -66,5 +65,10 @@ img {
     flex-direction: row;
     padding-top: 10%;
     justify-content: space-evenly;
+  }
+  input[type="text"],
+  select,
+  option {
+    width: 300px;
   }
 }

@@ -36,13 +36,16 @@ nav h1 {
 
 main,
 footer {
-  padding: 10px;
   text-align: center;
 }
+
 section {
-  padding-top: 30%;
+  padding-top: 40%;
+}
+
+.flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 
@@ -52,6 +55,11 @@ footer p {
   margin: 15px;
   border-radius: 15px;
   background-color: rgb(68, 0, 0);
+}
+
+img,
+.item {
+  padding: 10px;
 }
 
 img {
@@ -65,8 +73,11 @@ footer p {
 }
 
 @media all and (min-width: 1000px) {
+  .flex,
   section {
-    flex-direction: row;
     padding-top: 10%;
+  }
+  .flex {
+    flex-direction: row;
   }
 }
