@@ -12,25 +12,25 @@
     <title>TasteBuddy</title>
   </head>
   <body>
-    <nav role="nav">
+    <nav class="nav">
       <h1>TasteBuddy</h1>
       <a href="../index.html">Wireframes</a>
       <a href="#signup-form">SignUp</a>
       <a href="#">Login</a>
     </nav>
-    <main role="main">
-      <header role="banner">
+    <main class="main">
+      <header class="banner">
         <h2>Take your tasting experience to the next level!</h2>
         <img src="../assets/5.png" />
         <p>
-          TasteBuddy is the perfect place to create, save, edit & delete your wine
-          tasting sheets.
+          TasteBuddy is the perfect place to create, save, edit & delete your
+          wine tasting sheets.
         </p>
         <p>
           With multiple features available, you can have a complete record of
           your favorite wines!
         </p>
-        <button>Learn More</button>
+        <button type="button">Signup</button>
       </header>
       <section>
         <h3>Awaken your senses!</h3>
@@ -41,55 +41,60 @@
         </p>
       </section>
       <section>
-        <h3>
-          Taste from a professional pespective!
-        </h3>
+        <h3>Taste from a professional pespective!</h3>
         <p>
           [<em>placeholder for screenshot of the deductive tasting grid.</em>]
         </p>
         <p>
-          Fill out your own deductive tasting format similar to the one that
-          the Court of Master Sommeliers use in their studies.
+          Fill out your own deductive tasting format similar to the one that the
+          Court of Master Sommeliers use in their studies.
         </p>
       </section>
       <section>
-        <h3>
-         Master your technical knowledge!
-        </h3>
+        <h3>Master your technical knowledge!</h3>
         <p>[<em>placeholder for screenshot of the TasteBud guide.</em>]</p>
         <p>
           With your TasteBud guide, you will be able to understand the function
-          of each concept when qualifying your wines, obtain recommendations and improve your ability to identify aromas with greater
-          precision.
+          of each concept when qualifying your wines, obtain recommendations and
+          improve your ability to identify aromas with greater precision.
         </p>
       </section>
       <h3>Start your TasteBuddy journey today!</h3>
-       <form id='signup-form'>
-         <fieldset>
-           <legend>🍷</legend>
-            <div>
-              <label for="first-name">First name:</label>
-              <input placeholder='First Name' type="text" name='first-name' id='first-name' />
-            </div>
-            <div>
-              <label for="last-name">Last name:</label>
-              <input type="text" name='last-name' id='last-name' placeholder='Last Name' />
-            </div>
-            <div>
-              <label for="email">Email:</label>
-              <input type="text" name='username' id='username' />
-            </div>
-            <div>
-              <label for="password">Password:</label>
-              <input type="password" name='password' id='password' />
-            </div>
-            <button type='submit'>Sign Up</button>
-            </fieldset>
-        </form>
-      </section>
+      <form id="signup-form">
+        <fieldset>
+          <legend>🍷</legend>
+          <div>
+            <label for="first-name">First name:</label>
+            <input
+              placeholder="First Name"
+              type="text"
+              name="first-name"
+              id="first-name"
+            />
+          </div>
+          <div>
+            <label for="last-name">Last name:</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Last Name"
+            />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="text" name="user" id="email" />
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <button type="submit">Sign Up</button>
+        </fieldset>
+      </form>
     </main>
+    <footer>
+      <p>Copyright © MTD systems</p>
+    </footer>
   </body>
-  <footer>
-    <p>Copyright © MTD systems</p>
-  </footer>
 </html>

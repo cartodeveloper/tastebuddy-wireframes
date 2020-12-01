@@ -12,7 +12,7 @@
     <title>TasteBuddy</title>
   </head>
   <body>
-    <nav role="nav">
+    <nav class="nav">
       <h1>TasteBuddy</h1>
       <a href="../index.html">Wireframes</a>
       <a href="./dashboard.html">Dashboard</a>
@@ -20,7 +20,7 @@
       <a href="./add-wine.html">+ New Wine</a>
       <a href="./tastebud-guide.html">TasteBud Guide</a>
     </nav>
-    <main role="main">
+    <main class="main">
       <h2>Deductive Tasting Format</h2>
       <section>
         <form>
@@ -53,7 +53,7 @@
           <fieldset>
             <legend>Sigth</legend>
             <div>
-              <label for="clarity">Clarity/Sediments:</label>
+              <label>Clarity/Sediments:</label>
               <select>
                 <option value="1">Clear</option>
                 <option value="2">Hazy</option>
@@ -61,7 +61,7 @@
               </select>
             </div>
             <div>
-              <label for="Concentration">Concentration:</label>
+              <label>Concentration:</label>
               <select>
                 <option value="1">Pale</option>
                 <option value="2">Medium</option>
@@ -70,17 +70,17 @@
             </div>
             <div>
               <p class='red-f'>Color</p>
-              <label for="Color">White:</label>
+              <label>White:</label>
               <select class="white-wines">
-                <option value=""></option>
+                <option value="">Select...</option>
                 <option value="0">Water White</option>
                 <option value="1">Straw</option>
                 <option value="2">Yellow</option>
                 <option value="3">Gold</option>
               </select>
-              <label for="red-wines">Red:</label>
+              <label>Red:</label>
               <select class="red-wines">
-                <option value=""></option>
+                <option value="">Select...</option>
                 <option value="2">Purple</option>
                 <option value="3">Ruby</option>
                 <option value="3">Red</option>
@@ -96,7 +96,7 @@
               
             </div>
             <div>
-              <label for="staning">Extract/Staning:</label>
+              <label>Extract/Staning:</label>
               <select>
                 <option value="1">None</option>
                 <option value="2">Ligth</option>
@@ -105,7 +105,7 @@
               </select>
             </div>
             <div>
-              <label for="tearing">Tearing:</label>
+              <label>Tearing:</label>
               <select>
                 <option value="1">Ligth</option>
                 <option value="2">Medium</option>
@@ -115,22 +115,23 @@
             <div class='no-flex'>
               <p class='red-f'>Gas evidence</p>
               <div class="radio">
+                <label for="yes-gas">Yes</label>
                 <input
                   type="radio"
                   id="yes-gas"
                   name="bool-g"
                   value="yes-gas"
                 />
-                <label for="Yes">Yes</label>
+                
+                <label for="no-gas">No</label>
                 <input type="radio" id="no-gas" name="bool-g" value="no-gas" />
-                <label for="No">No</label>
               </div>
             </div>
           </fieldset>
           <fieldset>
             <legend>Nose</legend>
             <div>
-              <label for="clean">Clean/Faulty:</label>
+              <label>Clean/Faulty:</label>
               <select>
                 <option value="0">TCA</option>
                 <option value="1">H2S</option>
@@ -142,7 +143,7 @@
               </select>
             </div>
             <div>
-              <label for="intensity">Intensity:</label>
+              <label>Intensity:</label>
               <select>
                 <option value="1">Delicate</option>
                 <option value="2">Moderate</option>
@@ -150,7 +151,7 @@
               </select>
             </div>
             <div>
-              <label for="age">Age Assessment:</label>
+              <label>Age Assessment:</label>
               <select>
                 <option value="0">Youthful</option>
                 <option value="1">Developing</option>
@@ -285,11 +286,11 @@
                 <p class='gray'>Age</p>
                 <label
                   >Old
-                  <input type="radio" id='wood' name='age-n' value='old'/>
+                  <input type="radio" id='age-n' name='age-n' value='old'/>
                 </label>
                 <label
                   >New
-                  <input type="radio" id='wood' name='age-n' value='new'/>
+                  <input type="radio" id='age-n' name='age-n' value='new'/>
                 </label>
                 
               </div>
@@ -297,22 +298,22 @@
                 <p class='gray'>Size</p>
                 <label
                   >Small
-                  <input type="radio" id='wood' name='size-n' value='small'/>
+                  <input type="radio" id='size-n' name='size-n' value='small'/>
                 </label>
                 <label
                   >Large
-                  <input type="radio" id='wood' name='size-n' value='large'/>
+                  <input type="radio" id='size-n' name='size-n' value='large'/>
                 </label>
               </div>
               <div class="item">
                 <p class='gray'>Origin</p>
                 <label
                   >American 
-                  <input type="radio" id='wood' name='origin-n' value='american'/>
+                  <input type="radio" id='origin-n' name='origin-n' value='american'/>
                 </label>
                 <label
                   >French
-                  <input type="radio" id='wood' name='origin-n' value='french'/>
+                  <input type="radio" id='origin-n' name='origin-n' value='french'/>
                 </label>
               </div>
             </div>
@@ -320,7 +321,7 @@
            <fieldset>
             <legend>Palate</legend>
             <div>
-              <label for="sweetness">Sweetness:</label>
+              <label>Sweetness:</label>
               <select>
                 <option value="0">Bone-Dry</option>
                 <option value="1">Dry</option>
@@ -458,37 +459,48 @@
                 <p class='gray'>Age</p>
                 <label
                   >Old
-                  <input type="radio" id='wood' name='age' value='old'/>
+                  <input type="radio" id='age-p' name='age-p' value='old'/>
                 </label>
                 <label
                   >New
-                  <input type="radio" id='wood' name='age' value='new'/>
+                  <input type="radio" id='age-p' name='age-p' value='new'/>
                 </label>
               </div>
               <div class="item">
                 <p class='gray'>Size</p>
                 <label
                   >Small
-                  <input type="radio" id='wood' name='size' value='small'/>
+                  <input type="radio" id='size-p' name='size-p' value='small'/>
                 </label>
                 <label
                   >Large
-                  <input type="radio" id='wood' name='size' value='large'/>
+                  <input type="radio" id='size-p' name='size-p' value='large'/>
                 </label>
               </div>
               <div class="item">
                 <p class='gray'>Origin</p>
                 <label
                   >American 
-                  <input type="radio" id='wood' name='origin' value='american'/>
+                  <input type="radio" id='origin-p' name='origin-p' value='american'/>
                 </label>
                 <label
                   >French
-                  <input type="radio" id='wood' name='origin' value='french'/>
+                  <input type="radio" id='origin-p' name='origin-p' value='french'/>
                 </label>
               </div>
               <div>
-              <label for="tannins">Tannins:</label>
+              <label>Tannins:</label>
+              <select>
+                <option value="0">Low</option>
+                <option value="1">Med-</option>
+                <option value="2">Medium</option>
+                <option value="3">Med+</option>
+                <option value="4">High</option>
+              </select>
+              </div>
+            </div>
+            <div>
+              <label>Acidity:</label>
               <select>
                 <option value="0">Low</option>
                 <option value="1">Med-</option>
@@ -498,17 +510,7 @@
               </select>
             </div>
             <div>
-              <label for="acidity">Acidity:</label>
-              <select>
-                <option value="0">Low</option>
-                <option value="1">Med-</option>
-                <option value="2">Medium</option>
-                <option value="3">Med+</option>
-                <option value="4">High</option>
-              </select>
-            </div>
-            <div>
-              <label for="alcohol">Alcohol:</label>
+              <label>Alcohol:</label>
               <select>
                 <option value="0">Low</option>
                 <option value="1">Med-</option>
@@ -518,7 +520,7 @@
               </select>
             </div>
              <div>
-              <label for="complexity">Complexity:</label>
+              <label>Complexity:</label>
               <select>
                 <option value="0">Low</option>
                 <option value="1">Med-</option>
@@ -528,7 +530,7 @@
               </select>
             </div>
              <div>
-              <label for="length">Length:</label>
+              <label>Length:</label>
               <select>
                 <option value="0">Short</option>
                 <option value="1">Med-</option>
@@ -538,7 +540,7 @@
               </select>
             </div>
             <div>
-              <label for="body">Body:</label>
+              <label>Body:</label>
               <select>
                 <option value="0">Ligth</option>
                 <option value="1">Medium</option>
@@ -546,7 +548,7 @@
               </select>
             </div>
             <div>
-              <label for="texture">Texture:</label>
+              <label>Texture:</label>
               <select>
                 <option value="0">Creamy</option>
                 <option value="1">Round</option>
@@ -558,18 +560,17 @@
           <fieldset>
             <legend>Conclusion</legend>
             <p class='red-f'>Comments</p>
-        <textarea id='comments' name='wine-review' rows='5' cols='70' placeholder="Spectacular wine from Salta. Deep red. Complex, red and ripe fruits...">
+          <textarea id='comments' name='wine-review' rows='5' cols='70' placeholder="Spectacular wine from Salta. Deep red. Complex, red and ripe fruits...">
             </textarea>
             <p class='red-f'> Score </p>
             <input type="number" min="1" max="100" placeholder="from 1 to 100 points">
-          </fieldset>
-          <button class='red-f'type='submit'>Add Wine</button>
+        </fieldset>
+          <button class='red-f' type='submit'>Add Wine</button>
         </form>
-        <div id="group"></div>
       </section>
     </main>
-  </body>
-  <footer>
+    <footer>
     <p>Copyright © MTD systems</p>
   </footer>
+  </body>
 </html>
