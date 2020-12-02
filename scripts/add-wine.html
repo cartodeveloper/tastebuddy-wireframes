@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav class="nav">
-      <h1><a href="./tastebud-guide.html">TasteBuddy</h1></a>
+      <h1><a href="./tastebud-guide.html">TasteBuddy</a></h1>
       <a href="../index.html">Wireframes</a>
       <a href="./dashboard.html">Dashboard</a>
       <a href="./wines.html">Wines</a>
@@ -27,15 +27,20 @@
           <img src="../assets/picture.png" alt="image-url" />
           <p class="image-text">Add (URL)Wine Image</p>
           <div>
-            <label for='wine-name'>Name:</label>
-            <input placeholder="eg.Yacochuya" type="text" id="wine-name" required/>
+            <label for="wine-name">Name:</label>
+            <input
+              placeholder="eg.Yacochuya"
+              type="text"
+              id="wine-name"
+              required
+            />
           </div>
           <div>
-            <label for='producer'>Producer:</label>
+            <label for="producer">Producer:</label>
             <input placeholder="The Etcharts" type="text" id="producer" />
           </div>
           <div>
-            <label for='varietal'>Varietal:</label>
+            <label for="varietal">Varietal:</label>
             <input placeholder="Malbec" type="text" id="varietal" />
           </div>
           <div>
@@ -43,11 +48,11 @@
             <input placeholder="2007" type="number" id="vintage" />
           </div>
           <div>
-            <label for='country'>Country:</label>
+            <label for="country">Country:</label>
             <input placeholder="Argentina" type="text" id="country" />
           </div>
           <div>
-            <label for='region'>Region:</label>
+            <label for="region">Region:</label>
             <input
               placeholder="Salta’s Cafayate valley"
               type="text"
@@ -561,9 +566,14 @@
           <fieldset>
             <legend>Conclusion</legend>
             <div>
-            <label for='wine-pairing'>Pairing:</label>
-            <input placeholder="Picahana with fresh rugula" type="text" id="wine-pairing" required/>
-          </div>
+              <label for="wine-pairing">Pairing:</label>
+              <input
+                placeholder="Picahana with fresh rugula"
+                type="text"
+                id="wine-pairing"
+                required
+              />
+            </div>
             <p class="red-f">Comments</p>
             <textarea
               id="comments"
@@ -581,9 +591,7 @@
               placeholder="from 1 to 100 points"
             />
           </fieldset>
-          <p class='warn'>
-              *All options are required!
-            </p>
+          <p class="warn">*All options are required!</p>
           <button class="red-f" type="submit">Add Wine</button>
         </form>
       </section>
