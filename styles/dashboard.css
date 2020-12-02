@@ -74,7 +74,7 @@ footer p {
 @media all and (min-width: 1000px) {
   .flex,
   section {
-    padding-top: 10%;
+    padding-top: 8%;
   }
   .flex {
     flex-direction: row;

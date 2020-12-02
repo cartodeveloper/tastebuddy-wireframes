@@ -30,7 +30,6 @@
           With multiple features available, you can have a complete record of
           your favorite wines!
         </p>
-        <button type="button">Signup</button>
       </header>
       <section>
         <h3>Awaken your senses!</h3>
@@ -60,7 +59,7 @@
         </p>
       </section>
       <h3>Start your TasteBuddy journey today!</h3>
-      <form id="signup-form">
+      <form id="signup-form" action="./tastebud-guide.html">
         <fieldset>
           <legend>🍷</legend>
           <div>
@@ -87,9 +86,18 @@
           </div>
           <div>
             <label for="password">Password:</label>
-            <input type="password" name="password" id="password" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="7"
+            />
+            <p>
+              your password must be 7 char length and contain at least a number
+              and a Uppercase letter
+            </p>
           </div>
-          <button type="submit">Sign Up</button>
+          <button type="submit">SignUp</button>
         </fieldset>
       </form>
     </main>

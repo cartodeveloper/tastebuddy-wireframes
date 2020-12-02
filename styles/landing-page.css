@@ -75,7 +75,8 @@ img {
   width: 300px;
   padding: 10px;
 }
-footer p {
+footer p,
+button {
   padding: 10px;
   font-size: small;
   text-align: center;
@@ -92,7 +93,12 @@ form {
   border-radius: 15px;
   box-shadow: 3px 3px 3px 3px gray inset;
 }
+form p {
+  color: red;
+  font-size: small;
+}
 input,
-fieldset {
+fieldset,
+button {
   border-radius: 10px;
 }

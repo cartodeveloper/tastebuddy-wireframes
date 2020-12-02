@@ -6,7 +6,8 @@
   color: white;
 }
 
-body {
+body,
+h3 {
   background-color: black;
 }
 nav {
@@ -24,7 +25,8 @@ nav a {
   padding: 30px;
   text-decoration: none;
 }
-a:hover {
+a:hover,
+section a {
   color: #db6666;
 }
 nav h1 {
@@ -32,6 +34,40 @@ nav h1 {
   margin-left: 30px;
   text-shadow: -1px 0 #723333, 0 3px#723333, 2px 0#723333, 0 -1px#723333;
 }
-main {
-  padding: 10%;
+main,
+footer {
+  padding-top: 30%;
+  text-align: center;
+}
+
+footer {
+  padding: 0;
+}
+img {
+  width: 200px;
+}
+h3 {
+  padding: 1%;
+  border-radius: 20px;
+}
+section,
+article,
+p {
+  padding: 30px;
+}
+
+section {
+  min-height: 200px;
+  padding: 30px 15px;
+  background-color: black;
+}
+section:nth-child(even) {
+  background-color: rgb(68, 0, 0);
+  color: white;
+}
+
+@media all and (min-width: 1000px) {
+  main {
+    padding-top: 10%;
+  }
 }

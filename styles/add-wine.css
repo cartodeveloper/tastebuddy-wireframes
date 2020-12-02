@@ -34,10 +34,16 @@ nav h1 {
   text-shadow: -1px 0 #723333, 0 3px#723333, 2px 0#723333, 0 -1px#723333;
 }
 main {
+  padding-top: 150px;
   text-align: center;
 }
+
 h2 {
-  margin-top: 10%;
+  font-size: 20px;
+}
+.warn {
+  color: red;
+  font-size: small;
 }
 section {
   padding: 10px;
@@ -46,14 +52,7 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-.image-text {
-  position: absolute;
-  font-size: small;
-  opacity: 0.5;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 img {
   width: 300px;
 }
@@ -142,5 +141,11 @@ footer p {
   nav {
     display: flex;
     justify-content: space-between;
+  }
+  main {
+    padding-top: 10%;
+  }
+  h2 {
+    font-size: 35px;
   }
 }
